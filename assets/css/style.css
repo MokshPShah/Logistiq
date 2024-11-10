@@ -1,0 +1,266 @@
+/* Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  --bs-primary: #062e39;
+  --bs-primary-rgb: rgb(86, 89, 105);
+  --bs-bgg: #FF9A25;
+  --bs-bgg-rgb: rgb(255, 154, 37);
+  --bs-orange: #fd5523;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+.bg-blue {
+  background: #2b4d57 !important;
+}
+
+ul,
+p {
+  margin: 0;
+}
+
+a {
+  list-style: none;
+}
+
+
+header {
+  background-color: #092E39;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.right {
+  background-color: var(--bs-orange);
+}
+
+/* navbar */
+.navbar {
+  background: #062e39;
+  box-shadow: 0 4px 6px rgba(22, 22, 26, 0.18);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--bs-orange);
+}
+
+.btn-outline-dark {
+  border-radius: 0;
+}
+
+.btn-outline-dark:focus {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-outline-dark {
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+
+  .btn-outline-dark:hover {
+    background: none;
+    color: gray;
+  }
+}
+
+.navbar-brand img {
+  background-color: var(--bs-orange);
+}
+
+.btn {
+  background-color: #2b4d57;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: var(--bs-orange);
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+
+.btn-orange{
+  background-color: var(--bs-orange);
+  color: #fff;
+  transition: all .5s ease;
+  border: 0;
+  border-radius: 10px;
+}
+
+.btn-orange:hover{
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: var(--bs-orange);
+  color: #fff;
+  transition: .5s ease;
+}
+
+/* Main Section Code */
+
+.container-main {
+  background: #122126;
+  background: linear-gradient(90deg, #122126, #122126 35%, #0a2c36 60%, #0a2c36);
+}
+
+.banner-img {
+  background: #122126;
+  background: linear-gradient(90deg, #122126, #122126 35%, #0a2c36 60%, #0a2c36);
+}
+
+.banner-img img {
+  padding: 51px 245px;
+
+}
+
+.banner-img__pattern {
+  position: relative;
+  background-image: url('/assets/img/banner/banner-bg.png');
+  background-size: cover;
+  z-index: 2;
+}
+
+
+.text-orange {
+  color: var(--bs-orange);
+}
+
+.con {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  border-left: 2px solid var(--bs-orange);
+  height: 240px;
+  margin: 20px;
+}
+
+.content-box {
+  color: #fff;
+}
+
+.round {
+  border-radius: 100px;
+  border: 3px solid var(--bs-orange);
+}
+
+.mb {
+  margin-bottom: 2.1rem;
+}
+
+.btn-arrow {
+  padding: 5px;
+}
+
+.banner_box {
+  position: absolute;
+  bottom: -300px;
+  right: 0;
+  z-index: 1;
+}
+
+.float-bob-y {
+  animation-name: float-bob-y;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.float-bob-x {
+  animation-name: float-bob-x;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.services {
+  color: var(--bs-primary);
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.ser_sec_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 1.5%;
+  border: 1px solid var(--bs-orange);
+  margin-right: 7px;
+  margin-bottom: 4px;
+}
+
+.text-large {
+  font-size: 3rem;
+  line-height: 55px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 3rem 5rem;
+}
+
+@keyframes float-bob-y {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-bob-x {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+/* Footer Section Code */
+
+footer {
+  background-color: #062e39;
+  color: white;
+  padding: 0.1rem 0;
+  height: 40vh;
+}
+
+.icon_clock {
+  margin-top: -2px;
+  margin-right: -6px;
+}
